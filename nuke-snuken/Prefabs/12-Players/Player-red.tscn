@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bekdmpvlmrqjg"]
+
+[ext_resource type="Script" uid="uid://bqmvimptaq8yv" path="res://Prefabs/00-Prefabs-Scripts/Character_1_MP.gd" id="1_jiwif"]
+[ext_resource type="Script" uid="uid://dydl7s83cscch" path="res://Prefabs/01-Resources/heading_movement_component.gd" id="2_vitrk"]
+[ext_resource type="Script" uid="uid://bxsy3k1ppsyfh" path="res://Prefabs/01-Resources/MovementInputs/hybrid_input_provider.gd" id="2_w51pj"]
+[ext_resource type="Script" uid="uid://b4plxh710gad4" path="res://Prefabs/01-Resources/MovementInputs/wasd_input_provider.gd" id="3_tx75y"]
+[ext_resource type="Script" uid="uid://45b2dkh7232t" path="res://Prefabs/11-Snake/snake_body_component_MP.gd" id="5_1ncvw"]
+[ext_resource type="PackedScene" uid="uid://c2pmfa7jdvdi4" path="res://Prefabs/11-Snake/SnakeHead.tscn" id="6_tx75y"]
+[ext_resource type="PackedScene" uid="uid://cuvkmkinl32e7" path="res://Prefabs/11-Snake/SnakeSegment_color.tscn" id="7_73lxe"]
+[ext_resource type="PackedScene" uid="uid://denphcpk658co" path="res://Prefabs/08-Weapons/weapon_1.tscn" id="8_v2h02"]
+[ext_resource type="PackedScene" uid="uid://cram7oc2errs1" path="res://Prefabs/11-Snake/SnakeTail_color.tscn" id="9_73lxe"]
+[ext_resource type="Resource" path="res://Prefabs/01-Resources/LimitedAngleRotation.tres" id="11_limit"]
+[ext_resource type="Script" uid="uid://brg8voa8x6ldh" path="res://Scripts/camera_follow.gd" id="11_w51pj"]
+
+[sub_resource type="Resource" id="Resource_3pc7e"]
+script = ExtResource("3_tx75y")
+metadata/_custom_type_script = "uid://b4plxh710gad4"
+
+[sub_resource type="Resource" id="Resource_aeiqf"]
+script = ExtResource("2_w51pj")
+wasd_provider = SubResource("Resource_3pc7e")
+metadata/_custom_type_script = "uid://bxsy3k1ppsyfh"
+
+[sub_resource type="Resource" id="Resource_g4l5k"]
+script = ExtResource("2_vitrk")
+input_provider = SubResource("Resource_aeiqf")
+rotation_strategy = ExtResource("11_limit")
+walk_speed = 6.0
+metadata/_custom_type_script = "uid://dnq7d7t577c2h"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d6pri"]
+height = 2.13125
+radius = 0.6
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_vbwa7"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_server"]
+properties/0/path = NodePath(".:cantidad_cuerpos")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+
+[node name="Player-Azul-MP" type="CharacterBody3D" unique_id=874104267 node_paths=PackedStringArray("snake_component") groups=["Global", "Jugador"]]
+collision_layer = 2
+collision_mask = 57
+script = ExtResource("1_jiwif")
+movement_component = SubResource("Resource_g4l5k")
+snake_component = NodePath("Snake")
+cantidad_cuerpos = 2
+
+[node name="SnakeHead" parent="." unique_id=1274954632 instance=ExtResource("6_tx75y")]
+
+[node name="ColisshionSnakeHead" type="CollisionShape3D" parent="." unique_id=1034130955]
+transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, -1.4479385e-08, 0.629, -1.3942466)
+shape = SubResource("CylinderShape3D_d6pri")
+
+[node name="Snake" type="Node3D" parent="." unique_id=1268262729]
+script = ExtResource("5_1ncvw")
+cuerpo_scene = ExtResource("7_73lxe")
+cola_scene = ExtResource("9_73lxe")
+gravedad_activa = false
+
+[node name="iniciocuerpo" type="Node3D" parent="Snake" unique_id=705221211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1199706255]
+transform = Transform3D(-1, 8.5434415e-08, -1.8539216e-08, 0, 0.21206391, 0.9772558, 8.742278e-08, 0.9772558, -0.21206391, 0, 1.6500888, -0.513973)
+billboard = 1
+text = "HP:"
+font_size = 64
+
+[node name="Weapon1" parent="." unique_id=1134921388 instance=ExtResource("8_v2h02")]
+transform = Transform3D(-0.6379416, 0, -5.2026238e-08, 0, 0.7189474, 0, 5.5770627e-08, 0, -0.5951108, -0.03870243, 1.494971, 0.015077949)
+visible = false
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=456300137]
+replication_config = SubResource("SceneReplicationConfig_vbwa7")
+
+[node name="ServerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=456300138]
+replication_config = SubResource("SceneReplicationConfig_server")
+
+[node name="Seguimiento" type="Node3D" parent="." unique_id=379956663]
+transform = Transform3D(1, 0, 0, 0, 0.6427876, 0.7660444, 0, -0.7660444, 0.6427876, 0, 1, 0)
+script = ExtResource("11_w51pj")
+inclinacion_x_grados = -80.0
+ajustar_camara_hija = true
+distancia = 20.0
+
+[node name="Camera3D" type="Camera3D" parent="Seguimiento" unique_id=99622474]
+transform = Transform3D(1, 0, 0, 0, 1, -2.9802322e-08, 0, 2.9802322e-08, 1, 0, 0.4763263, 10.989499)
+fov = 68.1

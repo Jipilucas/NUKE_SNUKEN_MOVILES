@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d26l4j8alk52q"]
+
+[ext_resource type="Script" uid="uid://be5mlp24ngubo" path="res://Prefabs/07-Areas3D/zona_danio.gd" id="1_7py2b"]
+[ext_resource type="PackedScene" uid="uid://15fo6xfc1yen" path="res://Prefabs/04-Terrains/EnemySpots/Trampas/trampa.tscn" id="2_drnj8"]
+[ext_resource type="Shape3D" uid="uid://drgxh3wr0ku2v" path="res://Materials/collision cuadro.tres" id="2_td2w6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5jk3c"]
+size = Vector3(1.6, 1.5, 1.6)
+
+[node name="Trampa1" type="Area3D" unique_id=109306189]
+collision_mask = 7
+script = ExtResource("1_7py2b")
+danio = 20
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1566858026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+shape = ExtResource("2_td2w6")
+
+[node name="trampa" parent="." unique_id=1187314228 instance=ExtResource("2_drnj8")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=739413519]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=204978045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604645e-08, 0.75, 5.9604645e-08)
+shape = SubResource("BoxShape3D_5jk3c")

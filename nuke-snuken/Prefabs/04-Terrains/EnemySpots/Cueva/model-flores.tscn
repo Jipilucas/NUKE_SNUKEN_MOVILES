@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbr0q13tj386i"]
+
+[ext_resource type="PackedScene" uid="uid://qg12r7t1vlj" path="res://Models/Escenario/flores.glb" id="1_37xfb"]
+[ext_resource type="Material" uid="uid://n728413swkoj" path="res://Materials/ameba.tres" id="2_4ikne"]
+
+[node name="flores" unique_id=765987296 instance=ExtResource("1_37xfb")]
+
+[node name="Circle_007" parent="." index="0" unique_id=893379321]
+surface_material_override/0 = ExtResource("2_4ikne")

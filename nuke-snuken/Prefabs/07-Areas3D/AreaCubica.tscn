@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://hfiqmkauyx03"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsbiv"]
+
+[node name="AreaCubica" type="Node3D" unique_id=370246494]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1195003118]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1954410905]
+shape = SubResource("BoxShape3D_bsbiv")

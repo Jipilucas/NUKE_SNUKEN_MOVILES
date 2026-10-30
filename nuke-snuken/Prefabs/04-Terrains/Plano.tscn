@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cdbra00n8a16y"]
+
+[ext_resource type="Material" uid="uid://bha43vuypx13e" path="res://Materials/material-verde.tres" id="1_gyf28"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bsbiv"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_s6aa6"]
+
+[node name="Plano" type="Node3D" unique_id=581006358]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2136735847]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=708220830]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("PlaneMesh_bsbiv")
+surface_material_override/0 = ExtResource("1_gyf28")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1340249926]
+shape = SubResource("WorldBoundaryShape3D_s6aa6")

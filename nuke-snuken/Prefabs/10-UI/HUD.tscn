@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c2ffqq1vhcmkv"]
+
+[ext_resource type="Script" uid="uid://by4g3brvuk60j" path="res://Prefabs/10-UI/hud.gd" id="1_4mojs"]
+[ext_resource type="PackedScene" path="res://Prefabs/10-UI/VirtualJoystick/VirtualJoystick.tscn" id="3_joy"]
+
+[node name="Hud" type="Control" unique_id=873896737]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_4mojs")
+
+[node name="VirtualJoystick" parent="." unique_id=987654321 instance=ExtResource("3_joy")]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -240.0
+offset_right = 230.0
+offset_bottom = -70.0
+grow_vertical = 0
+
+[node name="DatosDeJugadores" type="Label" parent="." unique_id=726747331]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ID_host" type="Label" parent="." unique_id=1993489262]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 616.0
+offset_right = 72.0
+offset_bottom = 639.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.4862745, 1, 1)
+text = "ID HOST:"

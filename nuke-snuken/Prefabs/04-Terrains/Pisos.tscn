@@ -1,0 +1,487 @@
+[gd_scene format=3 uid="uid://buh7nw2sbm2v"]
+
+[ext_resource type="PackedScene" uid="uid://c8snk5dirlijd" path="res://Prefabs/04-Terrains/piso.tscn" id="1_t2wgu"]
+
+[node name="Pisos" type="Node3D" unique_id=72762911]
+
+[node name="Mayas" type="Node3D" parent="." unique_id=965671758]
+
+[node name="Piso" parent="Mayas" unique_id=2027067076 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Piso2" parent="Mayas" unique_id=1288189090 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Piso3" parent="Mayas" unique_id=364143824 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="Piso4" parent="Mayas" unique_id=801704160 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Piso5" parent="Mayas" unique_id=2125141090 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Piso6" parent="Mayas" unique_id=916469179 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="Piso7" parent="Mayas" unique_id=1353426965 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="Piso8" parent="Mayas" unique_id=1072110239 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="Piso9" parent="Mayas" unique_id=1046317876 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="Piso10" parent="Mayas" unique_id=1135114541 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="Piso11" parent="Mayas" unique_id=149270934 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+
+[node name="Piso12" parent="Mayas" unique_id=1016404791 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="Piso13" parent="Mayas" unique_id=629583222 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+
+[node name="Piso14" parent="Mayas" unique_id=2074096971 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+
+[node name="Piso15" parent="Mayas" unique_id=702843592 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+
+[node name="Piso16" parent="Mayas" unique_id=1868937351 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+
+[node name="Piso17" parent="Mayas" unique_id=1735015798 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+
+[node name="Piso18" parent="Mayas" unique_id=647380547 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+
+[node name="Piso19" parent="Mayas" unique_id=213974589 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+
+[node name="Piso20" parent="Mayas" unique_id=110253250 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+
+[node name="Piso21" parent="Mayas" unique_id=1567158550 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="Piso22" parent="Mayas" unique_id=1761962307 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="Piso23" parent="Mayas" unique_id=830248813 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
+
+[node name="Piso24" parent="Mayas" unique_id=2040548047 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+
+[node name="Piso25" parent="Mayas" unique_id=36247210 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+
+[node name="Piso26" parent="Mayas" unique_id=737475688 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+
+[node name="Piso27" parent="Mayas" unique_id=1314678173 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+
+[node name="Piso28" parent="Mayas" unique_id=1867487707 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+
+[node name="Piso29" parent="Mayas" unique_id=1049545970 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 2)
+
+[node name="Piso30" parent="Mayas" unique_id=92294419 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 2)
+
+[node name="Piso31" parent="Mayas" unique_id=1695382483 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+
+[node name="Piso32" parent="Mayas" unique_id=1739360718 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+
+[node name="Piso33" parent="Mayas" unique_id=1442894322 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4)
+
+[node name="Piso34" parent="Mayas" unique_id=727345365 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+
+[node name="Piso35" parent="Mayas" unique_id=1877092601 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+
+[node name="Piso36" parent="Mayas" unique_id=44716449 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 6)
+
+[node name="Piso37" parent="Mayas" unique_id=168769044 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6)
+
+[node name="Piso38" parent="Mayas" unique_id=1773797456 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6)
+
+[node name="Piso39" parent="Mayas" unique_id=1491021024 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 6)
+
+[node name="Piso40" parent="Mayas" unique_id=2021825381 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 6)
+
+[node name="Piso41" parent="Mayas" unique_id=508466156 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -8)
+
+[node name="Piso42" parent="Mayas" unique_id=98077231 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
+
+[node name="Piso43" parent="Mayas" unique_id=739452934 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -8)
+
+[node name="Piso44" parent="Mayas" unique_id=1178060818 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
+
+[node name="Piso45" parent="Mayas" unique_id=2091159646 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
+
+[node name="Piso46" parent="Mayas" unique_id=1465343580 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6)
+
+[node name="Piso47" parent="Mayas" unique_id=1663626811 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="Piso48" parent="Mayas" unique_id=1777969475 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -6)
+
+[node name="Piso49" parent="Mayas" unique_id=1056612377 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -6)
+
+[node name="Piso50" parent="Mayas" unique_id=1464652376 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -6)
+
+[node name="Piso51" parent="Mayas" unique_id=45110226 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+
+[node name="Piso52" parent="Mayas" unique_id=1786505477 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="Piso53" parent="Mayas" unique_id=795303306 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+
+[node name="Piso54" parent="Mayas" unique_id=1624524261 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+
+[node name="Piso55" parent="Mayas" unique_id=1405340663 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+
+[node name="Piso56" parent="Mayas" unique_id=571367342 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+
+[node name="Piso57" parent="Mayas" unique_id=276180887 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+
+[node name="Piso58" parent="Mayas" unique_id=1170018391 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+
+[node name="Piso59" parent="Mayas" unique_id=1842459180 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+
+[node name="Piso60" parent="Mayas" unique_id=883077815 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+
+[node name="Piso61" parent="Mayas" unique_id=694397551 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8)
+
+[node name="Piso62" parent="Mayas" unique_id=1587275364 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+
+[node name="Piso63" parent="Mayas" unique_id=742823258 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
+
+[node name="Piso64" parent="Mayas" unique_id=1979675326 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="Piso65" parent="Mayas" unique_id=924464787 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="Piso66" parent="Mayas" unique_id=867140926 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="Piso67" parent="Mayas" unique_id=980225473 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="Piso68" parent="Mayas" unique_id=371249591 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="Piso69" parent="Mayas" unique_id=1643164837 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="Piso70" parent="Mayas" unique_id=1654033773 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="Piso71" parent="Mayas" unique_id=1852102818 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="Piso72" parent="Mayas" unique_id=224769702 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="Piso73" parent="Mayas" unique_id=718717969 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+
+[node name="Piso74" parent="Mayas" unique_id=2033647640 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="Piso75" parent="Mayas" unique_id=222091252 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="Piso76" parent="Mayas" unique_id=1676897844 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="Piso77" parent="Mayas" unique_id=139580758 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="Piso78" parent="Mayas" unique_id=374022315 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="Piso79" parent="Mayas" unique_id=1196044399 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="Piso80" parent="Mayas" unique_id=95101553 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="Piso81" parent="Mayas" unique_id=1957438068 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
+
+[node name="Piso82" parent="Mayas" unique_id=1390734222 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="Piso83" parent="Mayas" unique_id=1234416912 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+
+[node name="Piso84" parent="Mayas" unique_id=117024139 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+
+[node name="Piso85" parent="Mayas" unique_id=33557639 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+
+[node name="Piso86" parent="Mayas" unique_id=1781935267 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 2)
+
+[node name="Piso87" parent="Mayas" unique_id=287373813 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2)
+
+[node name="Piso88" parent="Mayas" unique_id=495636839 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 2)
+
+[node name="Piso89" parent="Mayas" unique_id=1265498914 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+
+[node name="Piso90" parent="Mayas" unique_id=973926637 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+
+[node name="Piso91" parent="Mayas" unique_id=1581389510 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
+
+[node name="Piso92" parent="Mayas" unique_id=1892298997 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 4)
+
+[node name="Piso93" parent="Mayas" unique_id=1816359507 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 4)
+
+[node name="Piso94" parent="Mayas" unique_id=10455024 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="Piso95" parent="Mayas" unique_id=2034344957 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="Piso96" parent="Mayas" unique_id=1860133384 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6)
+
+[node name="Piso97" parent="Mayas" unique_id=1638876133 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 6)
+
+[node name="Piso98" parent="Mayas" unique_id=637307259 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+
+[node name="Piso99" parent="Mayas" unique_id=1026254835 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 6)
+
+[node name="Piso100" parent="Mayas" unique_id=2064326233 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 6)
+
+[node name="Piso101" parent="Mayas" unique_id=1073953710 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 0)
+
+[node name="Piso102" parent="Mayas" unique_id=914878311 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 0)
+
+[node name="Piso103" parent="Mayas" unique_id=1503242186 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="Piso104" parent="Mayas" unique_id=1817654681 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 0)
+
+[node name="Piso105" parent="Mayas" unique_id=970520617 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 0)
+
+[node name="Piso106" parent="Mayas" unique_id=1291634823 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 2)
+
+[node name="Piso107" parent="Mayas" unique_id=1523923036 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 2)
+
+[node name="Piso108" parent="Mayas" unique_id=786497762 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 2)
+
+[node name="Piso109" parent="Mayas" unique_id=1445073510 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 2)
+
+[node name="Piso110" parent="Mayas" unique_id=369182418 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 2)
+
+[node name="Piso111" parent="Mayas" unique_id=97895427 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 4)
+
+[node name="Piso112" parent="Mayas" unique_id=1155264743 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 4)
+
+[node name="Piso113" parent="Mayas" unique_id=1466925498 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 4)
+
+[node name="Piso114" parent="Mayas" unique_id=191828788 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 4)
+
+[node name="Piso115" parent="Mayas" unique_id=964364508 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 4)
+
+[node name="Piso116" parent="Mayas" unique_id=1334409235 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 6)
+
+[node name="Piso117" parent="Mayas" unique_id=67240045 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 6)
+
+[node name="Piso118" parent="Mayas" unique_id=1955508511 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 6)
+
+[node name="Piso119" parent="Mayas" unique_id=1015833676 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 6)
+
+[node name="Piso120" parent="Mayas" unique_id=753446943 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 6)
+
+[node name="Piso121" parent="Mayas" unique_id=767469893 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -8)
+
+[node name="Piso122" parent="Mayas" unique_id=673229457 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -8)
+
+[node name="Piso123" parent="Mayas" unique_id=879637429 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -8)
+
+[node name="Piso124" parent="Mayas" unique_id=597673696 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -8)
+
+[node name="Piso125" parent="Mayas" unique_id=2118455731 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -8)
+
+[node name="Piso126" parent="Mayas" unique_id=1240208085 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -6)
+
+[node name="Piso127" parent="Mayas" unique_id=1684162047 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -6)
+
+[node name="Piso128" parent="Mayas" unique_id=764596928 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -6)
+
+[node name="Piso129" parent="Mayas" unique_id=300625172 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -6)
+
+[node name="Piso130" parent="Mayas" unique_id=779209466 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -6)
+
+[node name="Piso131" parent="Mayas" unique_id=721043740 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -4)
+
+[node name="Piso132" parent="Mayas" unique_id=1974216342 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -4)
+
+[node name="Piso133" parent="Mayas" unique_id=281336424 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -4)
+
+[node name="Piso134" parent="Mayas" unique_id=1569802490 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -4)
+
+[node name="Piso135" parent="Mayas" unique_id=1851644894 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -4)
+
+[node name="Piso136" parent="Mayas" unique_id=1865719040 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -2)
+
+[node name="Piso137" parent="Mayas" unique_id=858019810 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -2)
+
+[node name="Piso138" parent="Mayas" unique_id=150273601 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -2)
+
+[node name="Piso139" parent="Mayas" unique_id=2078449770 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -2)
+
+[node name="Piso140" parent="Mayas" unique_id=951431013 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -2)
+
+[node name="Piso141" parent="Mayas" unique_id=430357645 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -8)
+
+[node name="Piso142" parent="Mayas" unique_id=280334484 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -8)
+
+[node name="Piso143" parent="Mayas" unique_id=1474553134 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -8)
+
+[node name="Piso144" parent="Mayas" unique_id=783313503 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -8)
+
+[node name="Piso145" parent="Mayas" unique_id=1064191915 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -8)
+
+[node name="Piso146" parent="Mayas" unique_id=641762074 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -6)
+
+[node name="Piso147" parent="Mayas" unique_id=1166072932 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -6)
+
+[node name="Piso148" parent="Mayas" unique_id=243723455 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -6)
+
+[node name="Piso149" parent="Mayas" unique_id=1525504836 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -6)
+
+[node name="Piso150" parent="Mayas" unique_id=719236636 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -6)
+
+[node name="Piso151" parent="Mayas" unique_id=1803967379 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -4)
+
+[node name="Piso152" parent="Mayas" unique_id=1601129468 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -4)
+
+[node name="Piso153" parent="Mayas" unique_id=509020516 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -4)
+
+[node name="Piso154" parent="Mayas" unique_id=92082772 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -4)
+
+[node name="Piso155" parent="Mayas" unique_id=1080111584 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -4)
+
+[node name="Piso156" parent="Mayas" unique_id=445021904 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -2)
+
+[node name="Piso157" parent="Mayas" unique_id=2046733279 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -2)
+
+[node name="Piso158" parent="Mayas" unique_id=1333812502 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -2)
+
+[node name="Piso159" parent="Mayas" unique_id=1472848491 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -2)
+
+[node name="Piso160" parent="Mayas" unique_id=833367878 instance=ExtResource("1_t2wgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -2)

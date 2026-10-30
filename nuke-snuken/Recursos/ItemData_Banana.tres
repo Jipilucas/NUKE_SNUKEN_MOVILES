@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://qxvkjd7l7ykh"]
+
+[ext_resource type="PackedScene" uid="uid://cx2f20twi8meh" path="res://Prefabs/14-Factory/Items/banana_2.tscn" id="1_p4cun"]
+[ext_resource type="Script" uid="uid://2u1pjdlcg3ff" path="res://Prefabs/14-Factory/14- Composite_Factory/item_data.gd" id="2_q6bkt"]
+
+[resource]
+script = ExtResource("2_q6bkt")
+nombre = "Banana"
+modelo_escena = ExtResource("1_p4cun")
+cura_vida = 10.0
+metadata/_custom_type_script = "uid://2u1pjdlcg3ff"

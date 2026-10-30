@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c3brkew77bp7y"]
+
+[ext_resource type="PackedScene" uid="uid://8ge8hnwg1jqq" path="res://Prefabs/04-Terrains/EnemySpots/Cueva/model-cueva.tscn" id="1_6qnr0"]
+[ext_resource type="PackedScene" uid="uid://cbr0q13tj386i" path="res://Prefabs/04-Terrains/EnemySpots/Cueva/model-flores.tscn" id="2_fprfp"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bsbiv"]
+height = 1.9
+radius = 1.7
+
+[node name="Cueva" type="Node3D" unique_id=290491093]
+
+[node name="Cueva" type="Node3D" parent="." unique_id=48318910]
+
+[node name="cueva" parent="Cueva" unique_id=490720815 instance=ExtResource("1_6qnr0")]
+
+[node name="flores" parent="Cueva" unique_id=765987296 instance=ExtResource("2_fprfp")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=930966384]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2042800086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("CylinderShape3D_bsbiv")

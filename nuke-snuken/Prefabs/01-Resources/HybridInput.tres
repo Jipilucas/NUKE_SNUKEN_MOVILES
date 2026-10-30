@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HybridInputProvider" format=3 uid="uid://cm8ypobl2xj0e"]
+
+[ext_resource type="Script" uid="uid://bxsy3k1ppsyfh" path="res://Prefabs/01-Resources/MovementInputs/hybrid_input_provider.gd" id="1_hybrid"]
+[ext_resource type="Script" uid="uid://b4plxh710gad4" path="res://Prefabs/01-Resources/MovementInputs/wasd_input_provider.gd" id="3_aeiqf"]
+
+[sub_resource type="Resource" id="Resource_tdpns"]
+script = ExtResource("3_aeiqf")
+metadata/_custom_type_script = "uid://b4plxh710gad4"
+
+[resource]
+script = ExtResource("1_hybrid")
+wasd_provider = SubResource("Resource_tdpns")

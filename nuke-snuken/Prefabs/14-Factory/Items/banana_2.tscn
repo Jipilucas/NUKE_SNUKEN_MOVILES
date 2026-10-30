@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cx2f20twi8meh"]
+
+[ext_resource type="PackedScene" uid="uid://equfm51sal24" path="res://Models/Items/banana2.glb" id="1_2d3vq"]
+[ext_resource type="Material" uid="uid://bw6dgc2wfm2ay" path="res://Materials/amarillo.tres" id="2_wqcp2"]
+
+[node name="banana2" unique_id=84756447 instance=ExtResource("1_2d3vq")]
+
+[node name="Circle_011" parent="." index="0" unique_id=1387011923]
+transform = Transform3D(-0.35927713, 3.1409005e-08, 0, -3.1409005e-08, -0.35927713, 0, 0, 0, 0.35927713, 0, 2.112694, 0)
+material_override = ExtResource("2_wqcp2")

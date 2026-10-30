@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dqqul7petu4f4"]
+
+[ext_resource type="Script" uid="uid://dmroge275i7pk" path="res://Prefabs/14-Factory/14- Composite_Factory/fabrica_conc.gd" id="1_ot6n6"]
+[ext_resource type="Resource" uid="uid://c45orpsf6r5k4" path="res://Recursos/ItemData_HuevosVerdes.tres" id="2_l7ero"]
+
+[node name="FabricaHuevosVerdes" type="Node3D" unique_id=571960063]
+script = ExtResource("1_ot6n6")
+item_data = ExtResource("2_l7ero")

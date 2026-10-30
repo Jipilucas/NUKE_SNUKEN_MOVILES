@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cd78mw58n3b15"]
+
+[ext_resource type="Script" uid="uid://dhg6cc3uuvsek" path="res://Prefabs/10-UI/Lobby/lobby.gd" id="1_03xaq"]
+[ext_resource type="Texture2D" uid="uid://b0wkv0wehb6np" path="res://Recursos/fondo dibujado.jpeg" id="2_hhinp"]
+[ext_resource type="FontFile" uid="uid://be7icuirs7tmo" path="res://Recursos/Metal Lord.otf" id="3_4c5hu"]
+[ext_resource type="Texture2D" uid="uid://doksuajkch6gv" path="res://Recursos/cuadrado.png" id="4_adjvh"]
+
+[node name="Lobby" type="Control" unique_id=2001818087]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_03xaq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2117383312]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_hhinp")
+
+[node name="JugadorListo" type="CheckBox" parent="." unique_id=1372907216]
+layout_mode = 0
+offset_left = 807.0
+offset_top = 345.0
+offset_right = 916.0
+offset_bottom = 419.0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("3_4c5hu")
+theme_override_font_sizes/font_size = 19
+text = "Listo"
+
+[node name="Comenzar" type="Button" parent="." unique_id=534249318]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 258.0
+offset_right = 918.0
+offset_bottom = 338.0
+theme_override_fonts/font = ExtResource("3_4c5hu")
+theme_override_font_sizes/font_size = 19
+text = "Comenzar"
+
+[node name="ListaDeJugadores" type="VBoxContainer" parent="." unique_id=269706759]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 29.0
+offset_right = 160.0
+offset_bottom = 69.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1970009723]
+position = Vector2(757.5, 606.74994)
+scale = Vector2(2.4140625, 0.35468745)
+texture = ExtResource("4_adjvh")
+
+[node name="IDLobby" type="Label" parent="." unique_id=1771043571]
+layout_mode = 0
+offset_left = 443.5
+offset_top = 591.75
+offset_right = 751.5
+offset_bottom = 618.75
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Lobby de Nuke Snuken num:"

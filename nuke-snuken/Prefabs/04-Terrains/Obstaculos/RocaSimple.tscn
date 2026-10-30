@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://6w063ifi14rc"]
+
+[ext_resource type="PackedScene" uid="uid://8u5vjo3gfupt" path="res://Prefabs/04-Terrains/Obstaculos/model-roca.tscn" id="1_fvphp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_abv61"]
+size = Vector3(2, 1.8000001, 2)
+
+[node name="RocaSimple" type="StaticBody3D" unique_id=1304804152]
+
+[node name="roca" parent="." unique_id=2111321596 instance=ExtResource("1_fvphp")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1285079116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 8.940697e-08)
+shape = SubResource("BoxShape3D_abv61")

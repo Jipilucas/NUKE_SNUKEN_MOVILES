@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cuvkmkinl32e7"]
+
+[ext_resource type="PackedScene" uid="uid://u8gotvgoxwic" path="res://Models/Snake/cuerpo1.glb" id="1_wvio0"]
+[ext_resource type="Script" uid="uid://be5mlp24ngubo" path="res://Prefabs/07-Areas3D/zona_danio.gd" id="2_arr8r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8i1qg"]
+
+[node name="Snake_Segment" unique_id=1061260335 instance=ExtResource("1_wvio0")]
+transform = Transform3D(1, 0, 0, 0, 0, 1.0000001, 0, -1.0000001, 0, 0, 0, 0)
+
+[node name="ZonaDanioBox" type="Area3D" parent="." index="0" unique_id=1445355986]
+transform = Transform3D(1.0289433, 0, 0, 0, 0.89783746, 0, 0, 0, 0.45, 0, 0.46359006, -0.23714021)
+visible = false
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("2_arr8r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ZonaDanioBox" index="0" unique_id=1184261126]
+shape = SubResource("BoxShape3D_8i1qg")
+debug_color = Color(1, 0.23137255, 0.24705882, 0.41960785)
+
+[node name="Circle" parent="." index="1" unique_id=1039697552]
+transform = Transform3D(0.45, 0, 0, 0, -0.45, -1.9670123e-08, 0, 1.9670123e-08, -0.45, 0, 0.4644584, 0.02699935)

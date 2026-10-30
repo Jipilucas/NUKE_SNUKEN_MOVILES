@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2tgp82h33ck1"]
+
+[ext_resource type="Script" uid="uid://dmroge275i7pk" path="res://Prefabs/14-Factory/14- Composite_Factory/fabrica_conc.gd" id="1_o2tu4"]
+[ext_resource type="Resource" uid="uid://cc2tfr0c12shn" path="res://Recursos/ItemData_HuevosAzules.tres" id="2_e52lq"]
+
+[node name="FabricaHuevosAzules" type="Node3D" unique_id=571960063]
+script = ExtResource("1_o2tu4")
+item_data = ExtResource("2_e52lq")

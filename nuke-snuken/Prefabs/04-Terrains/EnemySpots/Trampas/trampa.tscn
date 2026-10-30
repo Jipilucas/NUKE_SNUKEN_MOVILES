@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://15fo6xfc1yen"]
+
+[ext_resource type="PackedScene" uid="uid://0vr2u14sw2vt" path="res://Models/Escenario/trampa.glb" id="1_21k0b"]
+[ext_resource type="Material" uid="uid://bh5b2570u8igi" path="res://Materials/TIERRA1.tres" id="2_ka5q7"]
+[ext_resource type="Material" uid="uid://pc8o3msqomgm" path="res://Materials/rojo.tres" id="3_4enfg"]
+
+[node name="trampa" unique_id=1187314228 instance=ExtResource("1_21k0b")]
+
+[node name="Circle" parent="." index="0" unique_id=879061970]
+surface_material_override/0 = ExtResource("2_ka5q7")
+
+[node name="Circle_001" parent="." index="1" unique_id=759461639]
+surface_material_override/0 = ExtResource("3_4enfg")
+
+[node name="Circle_002" parent="." index="2" unique_id=2078329865]
+surface_material_override/0 = ExtResource("3_4enfg")
+
+[node name="Circle_003" parent="." index="3" unique_id=1753671553]
+surface_material_override/0 = ExtResource("3_4enfg")
+
+[node name="Circle_004" parent="." index="4" unique_id=1675448220]
+surface_material_override/0 = ExtResource("3_4enfg")
+
+[node name="Circle_005" parent="." index="5" unique_id=952395387]
+surface_material_override/0 = ExtResource("3_4enfg")

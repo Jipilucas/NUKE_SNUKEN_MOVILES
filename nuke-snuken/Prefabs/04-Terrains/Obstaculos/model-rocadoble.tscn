@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://di7lf7v21ktn8"]
+
+[ext_resource type="PackedScene" uid="uid://bql3oascklmb4" path="res://Models/Escenario/rocadoble.glb" id="1_kql5q"]
+[ext_resource type="Material" uid="uid://8jk53437g0pj" path="res://Materials/Roca.tres" id="2_ifr7x"]
+[ext_resource type="Material" uid="uid://n728413swkoj" path="res://Materials/ameba.tres" id="3_er17n"]
+
+[node name="rocadoble" unique_id=813456088 instance=ExtResource("1_kql5q")]
+
+[node name="Circle_009" parent="." index="0" unique_id=377699848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+surface_material_override/0 = ExtResource("2_ifr7x")
+
+[node name="Circle_010" parent="." index="1" unique_id=1972279124]
+transform = Transform3D(0.12653828, 0, 0, 0, 0.12653828, 0, 0, 0, 0.12653828, 1.8110614, 0, -0.38852322)
+surface_material_override/0 = ExtResource("3_er17n")

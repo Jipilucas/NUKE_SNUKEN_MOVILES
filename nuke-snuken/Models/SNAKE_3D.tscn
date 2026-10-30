@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://crtl8v0u54lhf"]
+
+[ext_resource type="Material" uid="uid://d2hh61q0qjlpt" path="res://Materials/verde.tres" id="2_1qtq6"]
+
+[node name="head1" unique_id=1617358969]
+
+[node name="Circle_005" parent="." index="0" unique_id=816274998]
+material_overlay = ExtResource("2_1qtq6")

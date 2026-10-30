@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cc2tfr0c12shn"]
+
+[ext_resource type="PackedScene" uid="uid://cl4sdu12nr83k" path="res://Prefabs/14-Factory/Items/Huevo_Azul.tscn" id="1_gphfs"]
+[ext_resource type="Script" uid="uid://2u1pjdlcg3ff" path="res://Prefabs/14-Factory/14- Composite_Factory/item_data.gd" id="2_2iuie"]
+
+[resource]
+script = ExtResource("2_2iuie")
+nombre = "Huevo-Azul"
+modelo_escena = ExtResource("1_gphfs")
+cura_vida = 5.0
+metadata/_custom_type_script = "uid://2u1pjdlcg3ff"

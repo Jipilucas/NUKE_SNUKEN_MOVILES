@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b7nfvd56svc7o"]
+
+[ext_resource type="ArrayMesh" uid="uid://dyqjriyaf5st7" path="res://Scenes/Screens/frutiloca1.obj" id="1_y7fyu"]
+[ext_resource type="PackedScene" uid="uid://06side1gdd8k" path="res://Prefabs/13-Worlds/Maps/Map1.tscn" id="2_ghxsb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4bl0n"]
+albedo_color = Color(0.6789075, 0, 0.012036538, 1)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8fmxt"]
+lifetime_randomness = 0.09
+emission_shape = 2
+emission_sphere_radius = 13.42
+gravity = Vector3(3.295, 10, 0)
+
+[sub_resource type="Animation" id="Animation_ghxsb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Level Up! "]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.57595867, 3.0281463, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_e5do7"]
+resource_name = "level"
+length = 3.4850000000000003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.33333334, 0.36666667, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["", "L", "Le", "Lev", "Leve", "Level", "Level U", "Level Up", "Level Up! "]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.13333334, 0.8, 0.894651, 0.9969779, 1.096978),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.57595867, 3.0281463, 0), Vector3(-0.57595867, 3.0281463, 0), Vector3(-0.57595867, 3.0281463, -0.43109632), Vector3(-0.57595867, 3.0281463, 0.429351), Vector3(-0.57595867, 3.0281463, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3vm4u"]
+_data = {
+&"RESET": SubResource("Animation_ghxsb"),
+&"level": SubResource("Animation_e5do7")
+}
+
+[sub_resource type="Environment" id="Environment_i8dh7"]
+background_mode = 1
+background_color = Color(0, 0.67705756, 2.5027991e-06, 1)
+background_energy_multiplier = 0.15
+volumetric_fog_density = 0.2065
+
+[node name="LevelUp" type="Node3D" unique_id=801620779]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=470960639]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Node3D" unique_id=277035523]
+transform = Transform3D(2.9429119, 0, 0, 0, 0.1982391, 0, 0, 0, 1, -10.23154, -10.026379, -13.753166)
+material_override = SubResource("StandardMaterial3D_4bl0n")
+amount = 56
+amount_ratio = 0.5641
+lifetime = 4.66
+process_material = SubResource("ParticleProcessMaterial_8fmxt")
+draw_pass_1 = ExtResource("1_y7fyu")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=274888806]
+transform = Transform3D(-0.93892545, -0.05826386, 0.089718476, 0, 0.79254365, 0.5146839, -0.10697702, 0.5113754, -0.7874491, 1.1465626, 21.869854, -31.94144)
+modulate = Color(0, 0.88766265, 3.85046e-06, 1)
+outline_modulate = Color(1, 0, 0, 1)
+text = "Level Up! "
+font_size = 629
+outline_size = 43
+uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label3D" unique_id=920116262]
+libraries/ = SubResource("AnimationLibrary_3vm4u")
+autoplay = &"level"
+
+[node name="Map" parent="." unique_id=588045091 instance=ExtResource("2_ghxsb")]
+enviroment = SubResource("Environment_i8dh7")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=564392361]
+transform = Transform3D(-0.9961947, -0.047468174, 0.07309463, 0, 0.83867073, 0.54463875, -0.087155335, 0.54256624, -0.8354794, 2.1965146, 26.947628, -39.74429)
+fov = 56.0

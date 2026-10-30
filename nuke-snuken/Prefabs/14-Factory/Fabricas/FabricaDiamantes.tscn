@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dajcuxvhgigxx"]
+
+[ext_resource type="Script" uid="uid://dmroge275i7pk" path="res://Prefabs/14-Factory/14- Composite_Factory/fabrica_conc.gd" id="1_8u0td"]
+[ext_resource type="Resource" uid="uid://d3typcxrrpj6e" path="res://Recursos/ItemData_Diamante.tres" id="2_h5gtw"]
+
+[node name="FabricaDiamantes" type="Node3D" unique_id=1008824186]
+script = ExtResource("1_8u0td")
+item_data = ExtResource("2_h5gtw")

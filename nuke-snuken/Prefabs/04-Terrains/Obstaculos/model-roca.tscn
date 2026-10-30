@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8u5vjo3gfupt"]
+
+[ext_resource type="PackedScene" uid="uid://b6bf3pexidrkb" path="res://Models/Escenario/roca.glb" id="1_jjxab"]
+[ext_resource type="Material" uid="uid://8jk53437g0pj" path="res://Materials/Roca.tres" id="2_2jg1l"]
+[ext_resource type="Material" uid="uid://n728413swkoj" path="res://Materials/ameba.tres" id="3_v4jso"]
+
+[node name="roca" unique_id=2111321596 instance=ExtResource("1_jjxab")]
+
+[node name="Circle_008" parent="." index="0" unique_id=1057444894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_2jg1l")
+
+[node name="Circle_012" parent="." index="1" unique_id=224879866]
+transform = Transform3D(0.12653828, 0, 0, 0, 0.12653828, 0, 0, 0, 0.12653828, 0.8110615, 0, -0.38852322)
+surface_material_override/0 = ExtResource("3_v4jso")

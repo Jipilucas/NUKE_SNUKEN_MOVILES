@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqt0ihoyaqepv"]
+
+[ext_resource type="Script" uid="uid://dwca0e5y4wwlo" path="res://Prefabs/07-Areas3D/zona_trigger.gd" id="1_irob7"]
+[ext_resource type="Material" uid="uid://dfa734dwk6svl" path="res://Materials/material-trigger.tres" id="2_kph2x"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7tsqo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsbiv"]
+
+[node name="ZonaTrigger" type="Area3D" unique_id=1511214277]
+collision_layer = 33
+collision_mask = 255
+script = ExtResource("1_irob7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=506690794]
+mesh = SubResource("BoxMesh_7tsqo")
+surface_material_override/0 = ExtResource("2_kph2x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=259665139]
+shape = SubResource("BoxShape3D_bsbiv")

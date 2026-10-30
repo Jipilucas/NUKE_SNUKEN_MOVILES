@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b85sy00yxr4ng"]
+
+[ext_resource type="Script" uid="uid://dmroge275i7pk" path="res://Prefabs/14-Factory/14- Composite_Factory/fabrica_conc.gd" id="1_v7m3b"]
+[ext_resource type="Resource" uid="uid://qxvkjd7l7ykh" path="res://Recursos/ItemData_Banana.tres" id="2_2budv"]
+
+[node name="FabricaBananas" type="Node3D" unique_id=231099691]
+script = ExtResource("1_v7m3b")
+item_data = ExtResource("2_2budv")

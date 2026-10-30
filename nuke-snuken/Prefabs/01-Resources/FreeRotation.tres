@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FreeRotationStrategy" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Prefabs/01-Resources/RotationStrategies/free_rotation_strategy.gd" id="1_free"]
+
+[resource]
+script = ExtResource("1_free")
+turn_speed = 10.0
+instant = false

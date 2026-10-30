@@ -1,0 +1,10 @@
+﻿{
+    "godotTools.editorPath.godot4": "f:\\25- GODOT\\Godot_v4.7.2-stable_mono_win64\\Godot_v4.7.2-stable_mono_win64.exe",
+    "dotnet.defaultSolution": "UPSO_Multiplayer.sln",
+    "files.exclude": {
+        "**/*.rpyc": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
+    }
+}

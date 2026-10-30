@@ -1,0 +1,6 @@
+[gd_resource type="Environment" format=3 uid="uid://bir8lk8jwt2bd"]
+
+[resource]
+background_mode = 1
+background_color = Color(1.7296989e-08, 0, 0.0381066, 1)
+background_energy_multiplier = 1.99

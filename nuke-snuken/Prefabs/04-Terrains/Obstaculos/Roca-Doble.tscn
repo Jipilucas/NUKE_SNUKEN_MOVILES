@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dt38y71xvfi4f"]
+
+[ext_resource type="PackedScene" uid="uid://di7lf7v21ktn8" path="res://Prefabs/04-Terrains/Obstaculos/model-rocadoble.tscn" id="1_abv61"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yc8k4"]
+size = Vector3(4, 3.8, 6.6)
+
+[node name="RocaDoble" type="StaticBody3D" unique_id=1596900894]
+
+[node name="rocadoble" parent="." unique_id=813456088 instance=ExtResource("1_abv61")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1366953969]
+transform = Transform3D(1, 0, 0, 0, 0.50400007, 0, 0, 0, 0.3, -2.9802322e-07, 0.7056, 2.9802322e-08)
+shape = SubResource("BoxShape3D_yc8k4")

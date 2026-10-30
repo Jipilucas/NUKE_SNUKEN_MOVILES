@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cram7oc2errs1"]
+
+[ext_resource type="PackedScene" uid="uid://cxdj72t5xigtn" path="res://Models/Snake/cola1.glb" id="1_lgrxj"]
+
+[node name="cola1" unique_id=1785365383 instance=ExtResource("1_lgrxj")]
+
+[node name="Circle_004" parent="." index="0" unique_id=962572680]
+transform = Transform3D(-0.44, -3.846602e-08, 0, 0, 0, -0.44, 3.846602e-08, -0.44, 0, 0, 0.41970056, -0.2508053)

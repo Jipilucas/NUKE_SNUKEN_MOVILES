@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c5c1v6hri580c"]
+
+[ext_resource type="PackedScene" uid="uid://fq6qmr3l6n5q" path="res://Models/Items/diamante1.glb" id="1_cwile"]
+[ext_resource type="Material" uid="uid://7j1sopucwris" path="res://Materials/verde_metalico.tres" id="2_mlwqt"]
+
+[node name="diamante1" unique_id=855074424 instance=ExtResource("1_cwile")]
+
+[node name="Diamante" parent="." index="0" unique_id=337381623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2931542, 0)
+surface_material_override/0 = ExtResource("2_mlwqt")

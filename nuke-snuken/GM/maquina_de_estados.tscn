@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bdlkpt8prk7hs"]
+
+[ext_resource type="Script" uid="uid://bmnwjvqj4jmh7" path="res://GM/maquina_de_estados.gd" id="1_dvkyy"]
+[ext_resource type="Script" uid="uid://wrndy82uvqua" path="res://GM/estado.gd" id="2_cwqm2"]
+[ext_resource type="Script" uid="uid://dkue0o8tytith" path="res://GM/estado_menu.gd" id="2_t8ryh"]
+[ext_resource type="Script" uid="uid://c0ei45cmtrhoh" path="res://GM/estado_juego.gd" id="3_g41ay"]
+[ext_resource type="Script" uid="uid://bwp0sfs8dvn0x" path="res://GM/jugando_online.gd" id="5_0ifde"]
+[ext_resource type="Script" uid="uid://bnwvksdt10i7f" path="res://GM/lobby_online.gd" id="6_d4kg6"]
+[ext_resource type="Script" uid="uid://b03on5xk415n4" path="res://GM/jugando_lobby.gd" id="7_kywjf"]
+
+[node name="MaquinaDeEstados" type="Node" unique_id=1073178870]
+script = ExtResource("1_dvkyy")
+
+[node name="EnMenu" type="Node" parent="." unique_id=1631275613]
+script = ExtResource("2_t8ryh")
+metadata/_custom_type_script = "uid://wrndy82uvqua"
+
+[node name="JugandoLocal" type="Node" parent="." unique_id=944493115]
+script = ExtResource("3_g41ay")
+metadata/_custom_type_script = "uid://wrndy82uvqua"
+
+[node name="EnPausa" type="Node" parent="." unique_id=800932761]
+script = ExtResource("2_cwqm2")
+metadata/_custom_type_script = "uid://wrndy82uvqua"
+
+[node name="Derrotado" type="Node" parent="." unique_id=1823583883]
+script = ExtResource("2_cwqm2")
+metadata/_custom_type_script = "uid://wrndy82uvqua"
+
+[node name="Victoria" type="Node" parent="." unique_id=176290233]
+script = ExtResource("2_cwqm2")
+metadata/_custom_type_script = "uid://wrndy82uvqua"
+
+[node name="JugandoOnline" type="Node" parent="." unique_id=2011398154]
+script = ExtResource("5_0ifde")
+
+[node name="LobbyOnline" type="Node" parent="." unique_id=51953768]
+script = ExtResource("6_d4kg6")
+
+[node name="JugandoLobby" type="Node" parent="." unique_id=1658322593]
+script = ExtResource("7_kywjf")

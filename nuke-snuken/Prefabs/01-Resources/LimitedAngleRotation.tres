@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LimitedAngleRotationStrategy" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Prefabs/01-Resources/RotationStrategies/limited_angle_rotation_strategy.gd" id="1_limit"]
+
+[resource]
+script = ExtResource("1_limit")
+velocidad_giro_grados = 220.0
+limitar_cono_deflexion = true
+angulo_maximo_deflexion_grados = 135.0

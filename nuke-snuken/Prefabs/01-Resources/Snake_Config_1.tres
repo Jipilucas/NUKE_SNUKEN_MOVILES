@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SnakeBodyComponent3D" format=3 uid="uid://b4skmb4ltmti8"]
+
+[ext_resource type="PackedScene" uid="uid://cram7oc2errs1" path="res://Prefabs/11-Snake/SnakeTail_color.tscn" id="1_dlw3c"]
+[ext_resource type="PackedScene" uid="uid://cuvkmkinl32e7" path="res://Prefabs/11-Snake/SnakeSegment_color.tscn" id="2_3lk41"]
+[ext_resource type="Script" uid="uid://b4lhvyr4tev2h" path="res://Prefabs/01-Resources/snake_body_component.gd" id="3_eb0tb"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("3_eb0tb")
+cuerpo_scene = ExtResource("2_3lk41")
+cola_scene = ExtResource("1_dlw3c")
+distancia_segmento = 1.5
+velocidad_rotacion = 14.22
+distancia_muestreo = 0.375
+gravedad_activa = false
+fuerza_gravedad = 9.5
+offset_suelo = 0.835
+velocidad_subida_terreno = 20.0

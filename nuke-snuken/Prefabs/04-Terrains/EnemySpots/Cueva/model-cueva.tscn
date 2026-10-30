@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8ge8hnwg1jqq"]
+
+[ext_resource type="PackedScene" uid="uid://cf4cbggu651lk" path="res://Models/Escenario/cueva.glb" id="1_ks36f"]
+[ext_resource type="Material" uid="uid://8jk53437g0pj" path="res://Materials/Roca.tres" id="2_buwq6"]
+
+[node name="cueva" unique_id=490720815 instance=ExtResource("1_ks36f")]
+
+[node name="Circle_006" parent="." index="0" unique_id=48454793]
+surface_material_override/0 = ExtResource("2_buwq6")

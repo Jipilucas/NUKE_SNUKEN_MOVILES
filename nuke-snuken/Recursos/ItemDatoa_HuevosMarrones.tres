@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://brxle43faxxal"]
+
+[ext_resource type="PackedScene" uid="uid://jmi8le0xflb2" path="res://Prefabs/14-Factory/Items/Huevo_Marron.tscn" id="1_556om"]
+[ext_resource type="Script" uid="uid://2u1pjdlcg3ff" path="res://Prefabs/14-Factory/14- Composite_Factory/item_data.gd" id="2_yto5y"]
+
+[resource]
+script = ExtResource("2_yto5y")
+nombre = "Huevo-Azul"
+modelo_escena = ExtResource("1_556om")
+puntos = 0
+cura_vida = 20.0
+agrega_cuerpos = 2
+metadata/_custom_type_script = "uid://2u1pjdlcg3ff"

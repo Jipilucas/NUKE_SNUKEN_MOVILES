@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bobp4ckk2cd3y"]
+
+[ext_resource type="Script" uid="uid://be8egfl0hgre0" path="res://Prefabs/10-UI/fila_jugador.gd" id="1_y7ulu"]
+
+[node name="FilaJugador" type="HBoxContainer" unique_id=1497830906]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y7ulu")
+
+[node name="Nombre" type="Label" parent="." unique_id=2004362263]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Vida" type="Label" parent="." unique_id=910463521]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Puntaje" type="Label" parent="." unique_id=789240410]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2

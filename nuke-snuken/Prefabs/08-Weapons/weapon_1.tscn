@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://denphcpk658co"]
+
+[ext_resource type="ArrayMesh" uid="uid://ilmn7ssfqxr8" path="res://Models/sueltos/peon-1.obj" id="1_3mpdn"]
+[ext_resource type="Script" uid="uid://cvrxj0duvgvx4" path="res://Prefabs/08-Weapons/weapon_1.gd" id="1_rjckj"]
+[ext_resource type="PackedScene" uid="uid://b0hnt3cu0lcqy" path="res://Prefabs/09-Bullets/Bullet_1.tscn" id="2_23e1n"]
+[ext_resource type="Script" uid="uid://b3do2xbphcsen" path="res://Prefabs/01-Resources/object_pool.gd" id="3_cvu5u"]
+
+[sub_resource type="Resource" id="Resource_7tsqo"]
+script = ExtResource("3_cvu5u")
+scene = ExtResource("2_23e1n")
+metadata/_custom_type_script = "uid://b3do2xbphcsen"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23e1n"]
+albedo_color = Color(0.92156863, 0.35686275, 0.40784314, 1)
+
+[node name="Weapon1" type="Node3D" unique_id=1134921388]
+script = ExtResource("1_rjckj")
+bullets_pool = SubResource("Resource_7tsqo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=143715155]
+transform = Transform3D(0.395, 0, 0, 0, -1.7265998e-08, -0.395, 0, 0.395, -1.7265998e-08, 0, 0, 0)
+mesh = ExtResource("1_3mpdn")
+surface_material_override/0 = SubResource("StandardMaterial3D_23e1n")
+
+[node name="PuntoDisparo" type="Marker3D" parent="." unique_id=556716055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.9213418)
+gizmo_extents = 0.54
+
+[node name="BulletContainer" type="Node3D" parent="." unique_id=910436577]

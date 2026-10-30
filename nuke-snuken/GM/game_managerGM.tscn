@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bbnsr1xagub51"]
+
+[ext_resource type="Script" uid="uid://bjvm3lhw7rhtv" path="res://GM/game_managerGM.gd" id="1_v7pco"]
+[ext_resource type="Texture2D" uid="uid://b0wkv0wehb6np" path="res://Recursos/fondo dibujado.jpeg" id="2_pefbo"]
+[ext_resource type="FontFile" uid="uid://be7icuirs7tmo" path="res://Recursos/Metal Lord.otf" id="3_70fl0"]
+[ext_resource type="Texture2D" uid="uid://ta60mujihg3i" path="res://Recursos/creditos.png" id="3_w50q5"]
+
+[node name="GameManager" type="Node" unique_id=1884509363]
+script = ExtResource("1_v7pco")
+metadata/_edit_vertical_guides_ = [1153.0, 1919.0]
+metadata/_edit_horizontal_guides_ = [653.0, 1072.0]
+
+[node name="MenuUI" type="CanvasLayer" parent="." unique_id=633527692]
+
+[node name="PantallaMenu" type="TextureRect" parent="MenuUI" unique_id=1831902870]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_pefbo")
+
+[node name="JUGAR" type="Button" parent="MenuUI" unique_id=275401562]
+offset_left = 57.615887
+offset_top = 152.98013
+offset_right = 204.63577
+offset_bottom = 190.06624
+theme_override_fonts/font = ExtResource("3_70fl0")
+theme_override_font_sizes/font_size = 19
+text = "JUGAR"
+
+[node name="PantallaCreditos" type="TextureRect" parent="MenuUI" unique_id=726802995]
+visible = false
+anchors_preset = -1
+anchor_right = 0.666
+anchor_bottom = 0.656
+offset_right = -0.57421875
+offset_bottom = 0.12927246
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_w50q5")
+expand_mode = 1
+
+[node name="CREDITOS" type="Button" parent="MenuUI" unique_id=346398157]
+offset_left = 58.9404
+offset_top = 202.649
+offset_right = 201.98677
+offset_bottom = 235.09935
+theme_override_fonts/font = ExtResource("3_70fl0")
+theme_override_font_sizes/font_size = 19
+text = "CRÉDITOS"
+
+[node name="VOLVER" type="Button" parent="MenuUI" unique_id=1457719928]
+offset_left = 57.61589
+offset_top = 295.36423
+offset_right = 203.97353
+offset_bottom = 335.76163
+theme_override_fonts/font = ExtResource("3_70fl0")
+theme_override_font_sizes/font_size = 19
+text = "VOLVER"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuUI" unique_id=1104328827]
+offset_left = 385.43048
+offset_top = 156.95366
+offset_right = 425.43048
+offset_bottom = 196.95366
+
+[node name="OptionButton" type="OptionButton" parent="MenuUI/VBoxContainer" unique_id=1807879693]
+layout_mode = 2
+item_count = 4
+popup/item_0/text = "Instancia local"
+popup/item_0/id = 0
+popup/item_1/text = "Instancia Online (Steam)"
+popup/item_1/id = 1
+popup/item_2/text = "Crear Lobby"
+popup/item_2/id = 2
+popup/item_3/text = "Unirse a un lobby"
+popup/item_3/id = 3
+
+[node name="LobbyIDN" type="LineEdit" parent="MenuUI/VBoxContainer" unique_id=871167640]
+visible = false
+layout_mode = 2
+placeholder_text = "Ingresa el nº de lobby"
+
+[connection signal="pressed" from="MenuUI/JUGAR" to="." method="iniciar_nivel"]
+[connection signal="pressed" from="MenuUI/CREDITOS" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="MenuUI/VOLVER" to="." method="_on_volver_pressed"]
+[connection signal="item_selected" from="MenuUI/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]

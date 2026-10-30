@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://btxjvjccasvfr"]
+
+[ext_resource type="Script" uid="uid://cssgn0naxak5d" path="res://Prefabs/14-Factory/Generator/generador_npc.gd" id="1_1efda"]
+
+[node name="GeneradorNpc" type="Node" unique_id=1510017407]
+script = ExtResource("1_1efda")

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://b0hnt3cu0lcqy"]
+
+[ext_resource type="Script" uid="uid://83hnk627tuo2" path="res://Prefabs/09-Bullets/bullet.gd" id="1_bbcbw"]
+[ext_resource type="PackedScene" uid="uid://4q88d1pa34md" path="res://Prefabs/07-Areas3D/Zona_Danio_Sphere.tscn" id="2_yfpv2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yfpv2"]
+friction = 0.61
+bounce = 0.65
+
+[sub_resource type="SphereMesh" id="SphereMesh_bsbiv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tsqo"]
+transparency = 1
+albedo_color = Color(0.6117647, 0.28235295, 0.5058824, 0.627451)
+metallic = 0.55
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bsbiv"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_55d5d"]
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfpv2"]
+albedo_color = Color(0.44705883, 1, 0.003921569, 1)
+emission_enabled = true
+emission_energy_multiplier = 3.76
+
+[sub_resource type="SphereMesh" id="SphereMesh_f5whk"]
+material = SubResource("StandardMaterial3D_yfpv2")
+radius = 0.01
+height = 0.001
+
+[node name="Bullet_1" type="RigidBody3D" unique_id=640656924 groups=["Proyectil"]]
+mass = 0.005
+physics_material_override = SubResource("PhysicsMaterial_yfpv2")
+script = ExtResource("1_bbcbw")
+danio = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=578822124]
+transform = Transform3D(0.78759, 0, 0, 0, 0.78759, 0, 0, 0, 0.78759, 0, 0, 0)
+mesh = SubResource("SphereMesh_bsbiv")
+surface_material_override/0 = SubResource("StandardMaterial3D_7tsqo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1111697351]
+transform = Transform3D(0.78759, 0, 0, 0, 0.78759, 0, 0, 0, 0.78759, 0, 0, 0)
+shape = SubResource("SphereShape3D_bsbiv")
+
+[node name="ZonaDanioSphere" parent="." unique_id=1445355986 instance=ExtResource("2_yfpv2")]
+transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 0, 0, 0)
+objetivo = "Enemigo"
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1084121822]
+amount = 25
+process_material = SubResource("ParticleProcessMaterial_55d5d")
+draw_pass_1 = SubResource("SphereMesh_f5whk")

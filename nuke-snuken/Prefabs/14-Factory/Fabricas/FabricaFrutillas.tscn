@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cm7rxx7utepp5"]
+
+[ext_resource type="Script" uid="uid://dmroge275i7pk" path="res://Prefabs/14-Factory/14- Composite_Factory/fabrica_conc.gd" id="1_yk4f4"]
+[ext_resource type="Resource" uid="uid://b7q6qyndogusq" path="res://Recursos/ItemData_Frutilla.tres" id="2_peftv"]
+
+[node name="FabricaFrutillas" type="Node3D" unique_id=340957836]
+script = ExtResource("1_yk4f4")
+item_data = ExtResource("2_peftv")

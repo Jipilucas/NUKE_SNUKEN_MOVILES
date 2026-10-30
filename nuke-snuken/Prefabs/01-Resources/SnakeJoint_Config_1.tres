@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SnakeJointManager" format=3]
+
+[ext_resource type="Script" path="res://Prefabs/00-Prefabs-Scripts/snake_component_physical.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://cexjrlgyud74d" path="res://Prefabs/11-Snake/CuerpoSnake_1.tscn" id="2_cuerpo"]
+[ext_resource type="PackedScene" uid="uid://idfir3g3k148" path="res://Prefabs/11-Snake/ColaSnake_1.tscn" id="3_cola"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_script")
+cuerpo_rigido_scene = ExtResource("2_cuerpo")
+cola_rigida_scene = ExtResource("3_cola")
+distancia_separacion = 1.6
+amortiguacion_lineal = 6.0
+amortiguacion_angular = 8.0
+bloquear_eje_y = false
+crear_cola_al_iniciar = true

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bha43vuypx13e"]
+
+[ext_resource type="Texture2D" uid="uid://ta60mujihg3i" path="res://Recursos/creditos.png" id="1_uujw3"]
+
+[resource]
+albedo_color = Color(0.15702817, 0.30747417, 0.07606255, 1)
+albedo_texture = ExtResource("1_uujw3")

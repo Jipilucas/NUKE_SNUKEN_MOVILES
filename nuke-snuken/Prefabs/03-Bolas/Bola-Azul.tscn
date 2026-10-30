@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cktyd6jmc1shf"]
+
+[ext_resource type="Material" uid="uid://dqc630atw3l2c" path="res://Materials/material-azul.tres" id="1_j6qpi"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bsbiv"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_bsbiv"]
+
+[node name="Bola-azul" type="RigidBody3D" unique_id=900658831 groups=["Proyectil"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=91370882]
+shape = SubResource("SphereShape3D_bsbiv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2139171035]
+mesh = SubResource("SphereMesh_bsbiv")
+surface_material_override/0 = ExtResource("1_j6qpi")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cpyddw3qi1mld"]
+
+[ext_resource type="Material" uid="uid://bgadgykbc2qii" path="res://Materials/material-staticshape3d.tres" id="1_88n4j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsbiv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7tsqo"]
+
+[node name="ZonaColision" type="StaticBody3D" unique_id=1462112493]
+collision_mask = 255
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1551458083]
+shape = SubResource("BoxShape3D_bsbiv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1302470832]
+mesh = SubResource("BoxMesh_7tsqo")
+surface_material_override/0 = ExtResource("1_88n4j")

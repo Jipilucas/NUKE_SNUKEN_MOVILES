@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://51x0tyqh1gmh"]
+
+[ext_resource type="PackedScene" uid="uid://dqaonq7p3ubrg" path="res://Models/Items/frutilla3.glb" id="1_3iwou"]
+[ext_resource type="Material" uid="uid://pc8o3msqomgm" path="res://Materials/rojo.tres" id="2_1mpgp"]
+[ext_resource type="Material" uid="uid://d2hh61q0qjlpt" path="res://Materials/verde.tres" id="3_gdi6i"]
+
+[node name="frutilla3" unique_id=592035775 instance=ExtResource("1_3iwou")]
+
+[node name="Circle_013" parent="." index="0" unique_id=379383411]
+transform = Transform3D(0.44494352, 0, 0, 0, 0.44494352, 0, 0, 0, 0.44494352, 0, 0.27752823, 0)
+surface_material_override/0 = ExtResource("2_1mpgp")
+
+[node name="Circle_014" parent="." index="1" unique_id=35562748]
+transform = Transform3D(0.44494352, 0, 0, 0, 0.44494352, 0, 0, 0, 0.44494352, 0, 0.7224717, 0)
+surface_material_override/0 = ExtResource("3_gdi6i")

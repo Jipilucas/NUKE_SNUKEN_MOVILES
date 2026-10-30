@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cax56dslujh2o"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bsbiv"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_7tsqo"]
+
+[node name="BolaLibre" type="Node3D" unique_id=1062895285]
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="." unique_id=1779751471]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" unique_id=73232294]
+shape = SubResource("SphereShape3D_bsbiv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1060255993]
+mesh = SubResource("SphereMesh_7tsqo")

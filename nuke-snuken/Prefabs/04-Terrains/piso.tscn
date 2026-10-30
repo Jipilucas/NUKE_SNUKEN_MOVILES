@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c8snk5dirlijd"]
+
+[ext_resource type="PackedScene" uid="uid://c1gw3ywa5me4k" path="res://Models/Escenario/UvOK/Piso.glb" id="1_73ake"]
+[ext_resource type="Material" uid="uid://bh5b2570u8igi" path="res://Materials/TIERRA1.tres" id="2_6nqpu"]
+
+[node name="Piso" unique_id=2027067076 instance=ExtResource("1_73ake")]
+
+[node name="Plane" parent="." index="0" unique_id=1302669852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+surface_material_override/0 = ExtResource("2_6nqpu")

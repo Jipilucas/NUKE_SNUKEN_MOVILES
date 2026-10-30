@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://d3typcxrrpj6e"]
+
+[ext_resource type="PackedScene" uid="uid://c5c1v6hri580c" path="res://Prefabs/14-Factory/Items/diamante_1.tscn" id="1_5yc2t"]
+[ext_resource type="Script" uid="uid://2u1pjdlcg3ff" path="res://Prefabs/14-Factory/14- Composite_Factory/item_data.gd" id="2_wg6fh"]
+
+[resource]
+script = ExtResource("2_wg6fh")
+nombre = "Diamante"
+modelo_escena = ExtResource("1_5yc2t")
+metadata/_custom_type_script = "uid://2u1pjdlcg3ff"

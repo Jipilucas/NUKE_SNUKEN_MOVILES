@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://4q88d1pa34md"]
+
+[ext_resource type="Script" uid="uid://be5mlp24ngubo" path="res://Prefabs/07-Areas3D/zona_danio.gd" id="1_nruoa"]
+[ext_resource type="Material" uid="uid://eovhu7yklee0" path="res://Materials/damage-trigger.tres" id="2_icqh4"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nruoa"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_oxxiw"]
+
+[node name="ZonaDanioSphere" type="Area3D" unique_id=1445355986]
+collision_layer = 8
+collision_mask = 255
+script = ExtResource("1_nruoa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1184261126]
+shape = SubResource("SphereShape3D_nruoa")
+debug_color = Color(0.9999997, 0.13788632, 0.19661307, 0.7882353)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1324527268]
+mesh = SubResource("SphereMesh_oxxiw")
+surface_material_override/0 = ExtResource("2_icqh4")

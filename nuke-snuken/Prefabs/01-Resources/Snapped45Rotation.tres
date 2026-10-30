@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SnappedRotationStrategy" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Prefabs/01-Resources/RotationStrategies/snapped_rotation_strategy.gd" id="1_snap45"]
+
+[resource]
+script = ExtResource("1_snap45")
+modo_angulo = 45
+instantaneo = false
+velocidad_transicion_grados = 720.0
+ignorar_reversa_directa = true

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c3fka55j7b6hp"]
+
+[ext_resource type="Script" uid="uid://cw70dsvk46euf" path="res://Prefabs/14-Factory/14- Composite_Factory/item_world.gd" id="1_d73yk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ppgoj"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gwh55"]
+height = 1.1417542
+radius = 0.76171875
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_d73yk"]
+properties/0/path = NodePath(".:data_path")
+properties/0/spawn = true
+properties/0/replication_mode = 0
+properties/1/path = NodePath(".:position")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+
+[node name="Item-Vacio" type="Area3D" unique_id=747452035 node_paths=PackedStringArray("mesh_instance", "collision_shape") groups=["ItemRecolectable"]]
+collision_layer = 33
+collision_mask = 255
+script = ExtResource("1_d73yk")
+mesh_instance = NodePath("MeshInstance3D")
+collision_shape = NodePath("CollisionShape3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1168187440]
+mesh = SubResource("BoxMesh_ppgoj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1494357574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.044543028, 0)
+shape = SubResource("CylinderShape3D_gwh55")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1207109488]
+replication_config = SubResource("SceneReplicationConfig_d73yk")

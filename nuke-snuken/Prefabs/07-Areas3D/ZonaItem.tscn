@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dn14lcaq3mls"]
+
+[ext_resource type="Script" uid="uid://cfwahwm554hc4" path="res://Prefabs/07-Areas3D/zona_item.gd" id="1_kdhq4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7tsqo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s6aa6"]
+transparency = 1
+albedo_color = Color(0.9585362, 0.95637184, 0, 0.3254902)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bsbiv"]
+
+[node name="ZonaItem" type="Area3D" unique_id=247656980 groups=["ItemRecolectable"]]
+collision_layer = 33
+collision_mask = 255
+script = ExtResource("1_kdhq4")
+puntaje = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1668850764]
+mesh = SubResource("BoxMesh_7tsqo")
+surface_material_override/0 = SubResource("StandardMaterial3D_s6aa6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1292486333]
+shape = SubResource("BoxShape3D_bsbiv")

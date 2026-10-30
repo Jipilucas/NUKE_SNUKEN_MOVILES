@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bjk8kvdj1wu0p"]
+
+[ext_resource type="Script" uid="uid://bkvp4val3shg4" path="res://GM/gestor_de_datos_pjs.gd" id="1_2p1ko"]
+
+[node name="GestorDeDatosPjs" type="Node" unique_id=1875522441]
+script = ExtResource("1_2p1ko")
